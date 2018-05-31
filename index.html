@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <script src="index.js"></script>
+    <?php
+    include("index.php");
+    ?>
+</head>
+<body>
+    <h1>Welcome to Snower's votepage!</h1></br></br>
+    <form action="index.php" method="post" name="form1" onsubmit="return check();">
+        <div id="form-block">
+            <span>Username:</span>&nbsp&nbsp&nbsp
+            <input name="user-name" id="username" type="text" size="20"></br></br>
+            <span>Password:</span>&nbsp&nbsp&nbsp
+            <input name="user-pwd" id="userpwd" type="password" size="20"></br></br>
+            <span>E-mail:</span>&nbsp&nbsp&nbsp
+            <input name="user-email" id="useremail" type="text" size="50"></br></br>
+            <input name="user-account" class="submit-button" type="submit" value="注册">&nbsp&nbsp&nbsp
+            <input name="user-login" class="submit-button" type="submit" value="登陆">
+        </div>
+    </form>
+</body>
+</html>

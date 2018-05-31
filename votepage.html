@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vote</title>
+    <?php
+    include("index.php");
+    ?>
+    <script src="index.js"></script>
+</head>
+<body>
+    <h1>Hello!this is vote page!</h1><br><br>
+    <h3>Choose a company you like most?</h3>
+<form action="index.php" method="post" onsubmit="return checkvote()">
+    <input type="radio" name="company-choose" value="0">Ubisoft
+    <input type="radio" name="company-choose" value="1">Tencent
+    <input type="radio" name="company-choose" value="2">Sega
+    <input type="radio" name="company-choose" value="3">Bandai
+    <input type="radio" name="company-choose" value="4">Blizzard
+    <input type="radio" name="company-choose" value="5">Bethesda
+    <input type="radio" name="company-choose" value="6">EA
+    <br><br>
+    <input type="submit" id="vote" name="vote" value="submit" >
+</form>
+</body>
+</html>
